@@ -1,0 +1,29 @@
+/*------------*/
+// news
+/*------------*/
+.news-card-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq{
+        flex-direction: column;
+    }
+}
+
+.news-card-item{
+    max-width: 320px;
+    margin-right: 10px;
+    box-shadow: 0 0 6px rgba(27, 19, 16, 0.4);
+
+    &:not(:first-child){
+        @include mq{
+            margin: 50px 0 0;
+        }
+    }
+}
+
+.news-text{
+    color: $color-font;
+    padding: 33px 25px;
+}

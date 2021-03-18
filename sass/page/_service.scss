@@ -1,0 +1,39 @@
+/*------------*/
+// service
+/*------------*/
+.service-text-inner,
+.service-img-wrapper{
+    max-width: 480px;
+}
+
+.service-img-wrapper{
+    @include mq{
+        margin-top: 40px;
+    }
+    img{
+        @include mq{
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+}
+
+.content-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq{
+        flex-direction: column;
+        margin: 50px auto;
+    }
+}
+
+.reverse{
+    margin-top: 40px;
+    flex-direction: row-reverse;
+    @include mq{
+        flex-direction: column;
+    }
+}

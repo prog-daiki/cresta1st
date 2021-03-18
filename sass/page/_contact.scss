@@ -1,0 +1,41 @@
+.form{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+input,textarea{
+    padding: 10px;
+    border: 1px solid $color-font;
+}
+
+.form-part{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+textarea{
+    resize: none;
+    height: 171px;
+}
+
+.form-send{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-btn{
+    width: 235px;
+    padding: 20px 97px;
+    border-radius: 51px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-main;
+    box-shadow: 0 0 6px $color-font;
+}
